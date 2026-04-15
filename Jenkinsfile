@@ -20,6 +20,12 @@ pipeline {
       }
     }
 
+    stage('Notify') {
+      steps {
+        echo 'Notificar el deploy'
+      }
+    }
+
   }
   environment {
     AUTHOR = 'Albert'
